@@ -1,0 +1,58 @@
+.container{
+    display: grid;
+    grid-template-columns:repeat(2,auto);
+    grid-template-rows: 3
+}  
+
+body {
+    background-image: linear-gradient(to top, #f0b69d 0%, #8673e3 100%);
+    height: 100vh
+}
+
+main{
+    display:grid;
+    font-family: 'Neucha';
+    color:#0c1d71
+} 
+
+
+#hoverChange:hover {
+    color: purple;
+    
+  }
+  
+h1{
+    font-family: 'Neucha', cursive;
+    color:#0c1d71; 
+    
+}  
+label{
+    color : white;
+    font-family: 'Neucha'; 
+
+  }        
+  @media (max-width: 1200px) {
+    /* Rules here apply to devices 1200px and greater */
+  }
+  
+  @media (max-width: 992px) {
+    /* Rules here apply to devices from 992px to 1199px (inclusive) */
+  }
+  
+  @media (max-width: 768px) {
+    /* Rules here apply to devices from from 768px to 991px (inclusive) */
+  }
+  
+  #sunrise{
+    text-align: center;
+  }
+  #sunset{
+    text-align: center;
+  }
+  #moon-info{
+    text-align: center;
+  }
+
+  .a{
+    text-align: center;
+  }
