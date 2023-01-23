@@ -1,4 +1,6 @@
 const BASE_URL = 'https://wttr.in'
+
+//global variables
 const form = document.querySelector("form")
 const userSearch = document.querySelector(".userSearch")
 const sunrise = document.querySelector("#sunrise")
@@ -22,25 +24,27 @@ function getApiData(event){
     fetch(url)
     .then((response) => response.json())
     .then((result) => {
-        getSunrise(result);
-        getSunset(result);
-        getMoonPhase(result);
-    })
+
+            getSunrise(result);
+            getSunset(result);
+            getMoonPhase(result);
+        }
+    )
     .catch((error) => {
-        console.log("Location not found");
+        console.log("Error, location not found.");
+;
 
         errorMessage(error)
+
+        
     })
     }
-function errorMessage(){
+function errorMessage(error){
     console.log("Location not found")
  };
 
 
-
 // functions
-
-
 
 
 function getSunrise(result){

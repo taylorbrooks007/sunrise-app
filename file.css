@@ -29,18 +29,20 @@ h1{
 label{
     color : white;
     font-family: 'Neucha'; 
-
-  }        
-  @media (max-width: 1200px) {
-    /* Rules here apply to devices 1200px and greater */
-  }
+  }  
   
   @media (max-width: 992px) {
-    /* Rules here apply to devices from 992px to 1199px (inclusive) */
+    body {
+      background-image: linear-gradient(to top, #d473e3 100% , #f0b69d 0%);
+      height: 100vh
+  }
   }
   
   @media (max-width: 768px) {
-    /* Rules here apply to devices from from 768px to 991px (inclusive) */
+    body {
+      background-image: linear-gradient(to top, #3e4ec4 100% , #f0b69d 0%);
+      height: 100vh
+  }
   }
   
   #sunrise{
